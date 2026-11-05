@@ -1,19 +1,20 @@
 # Public repo status – 2026-11-06
 
-## Closed from audit
-- [x] `bhvDimProp` → `src/behaviors/hs64/dim_prop.inc.c`
-- [x] `docs/WORLD_APPLY_CHECKLIST.md`
-- [x] `docs/TODO_REALITY.md`
-- [x] `docs/BUILD_INTEGRATION.md` (model IDs + behavior map)
-- [x] `entities/*/SPEC.md`
-- [x] `levels/` design stubs + ruptured-dimensions README
-- [x] `runtime/frontend/launcher.py` (slim)
-- [x] Drive ROM verified: `backroomsSCP64_rupture_collision_v12.z64` (~7.6 MB)
+## Closed
+- [x] P0 structure (actors, behaviors, sanity, textures placeholders)
+- [x] `bhvDimProp`
+- [x] WORLD_APPLY_CHECKLIST, BUILD_INTEGRATION, TODO_REALITY, WORK_ORDER (synced)
+- [x] entities SPECs, levels design stubs
+- [x] runtime/frontend/launcher.py
+- [x] Drive ROM v12 verified
+- [x] CANONICAL_SPAWN_BLOCK includes MODEL_RUPTURE_ROOM
 
-## Still workspace-only (large / optional)
-- Full `*_script_v10.c` per level (10–35 KB) – see `src/level_scripts/world_apply/README.md`
-- Detailed ruptured-dimension markdown (01–05) – can be pushed on request
+## Rupture note
+Visual: open-top (no ceiling mesh). Collision: includes top plane for containment. Intentional.
+
+## Still workspace-only
+- Full `*_script_v10.c` per level – see `src/level_scripts/world_apply/README.md`
 - Binary builds – Google Drive only
 
-## Reproduce build
-See `docs/BUILD_INTEGRATION.md` + README.
+## Reproduce
+`docs/BUILD_INTEGRATION.md` + README.

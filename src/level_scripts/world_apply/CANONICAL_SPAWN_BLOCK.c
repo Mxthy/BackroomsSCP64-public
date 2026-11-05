@@ -1,7 +1,8 @@
 /* BackroomsSCP64 – CANONICAL SPAWN BLOCK
  * Paste into script_func_local_1[] of target levels.
  * Requires: group0.h, MODEL_SCP*, MODEL_DATA_PAD, MODEL_SEAL_NODE, MODEL_DIM_*,
- *           bhvScp173/096/106, bhvDataPad, bhvSealNode, bhvDimProp
+ *           MODEL_RUPTURE_ROOM, bhvScp173/096/106, bhvDataPad, bhvSealNode,
+ *           bhvDimProp, bhvRuptureRoom (or bhvStaticObject + collision)
  * DO NOT edit behaviors while World-Apply is active.
  */
 
@@ -20,3 +21,6 @@
     OBJECT(/*model*/ MODEL_DIM_CRYSTAL, /*pos*/ 800, 150, -1800, /*angle*/ 0, 45, 0, /*behParam*/ 0, /*beh*/ bhvDimProp),
     OBJECT(/*model*/ MODEL_DIM_CORRIDOR, /*pos*/ -1500, 100, -1200, /*angle*/ 0, 90, 0, /*behParam*/ 0, /*beh*/ bhvDimProp),
     OBJECT(/*model*/ MODEL_DIM_GRASS, /*pos*/ 500, 50, 500, /*angle*/ 0, 0, 0, /*behParam*/ 0, /*beh*/ bhvDimProp),
+
+    /* --- Rupture Room set-piece (visual floor+walls; collision also has top plane for containment) --- */
+    OBJECT(/*model*/ MODEL_RUPTURE_ROOM, /*pos*/ 0, 0, -3500, /*angle*/ 0, 0, 0, /*behParam*/ 0, /*beh*/ bhvRuptureRoom),
